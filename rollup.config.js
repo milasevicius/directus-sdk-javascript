@@ -6,9 +6,12 @@ export default {
   entry: './index.js',
   dest: './dist/index.js',
   format: 'cjs',
+  external: [
+    'axios',
+    'qs'
+  ],
   plugins: [
     resolve({
-      jsnext: true,
       main: true,
       browser: true,
     }),
