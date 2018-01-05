@@ -4,9 +4,11 @@ import commonjs from 'rollup-plugin-commonjs';
 import uglify from 'rollup-plugin-uglify';
 
 export default {
-  entry: './remote.js',
-  dest: './dist/remote.js',
-  format: 'cjs',
+  input: './remote.js',
+  output: {
+    file: './dist/remote.js',
+    format: 'cjs',
+  },
   plugins: [
     resolve({
       main: true,
