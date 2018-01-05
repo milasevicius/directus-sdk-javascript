@@ -3,13 +3,9 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 
 export default {
-  entry: './index.js',
-  dest: './dist/index.js',
+  entry: './remote.js',
+  dest: './dist/remote.js',
   format: 'cjs',
-  external: [
-    'axios',
-    'qs'
-  ],
   plugins: [
     resolve({
       main: true,
